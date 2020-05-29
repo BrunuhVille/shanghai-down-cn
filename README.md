@@ -13,6 +13,7 @@ chmod 777 /etc/resolv.conf && echo -e "nameserver 223.5.5.5
 nameserver 223.6.6.6" > /etc/resolv.conf
 
 chmod 777 /etc/hosts && echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
+
 chmod 777 /etc/hosts && echo "13.229.188.59 github.com" >> /etc/hosts
 
 CentOS 7.0默认使用的是firewall作为防火墙
