@@ -40,7 +40,7 @@ check_installed_status(){
 Download_caddy(){
 	[[ ! -e ${file} ]] && mkdir "${file}"
 	cd "${file}"
-	PID=$(ps -ef |grep "caddy" |grep -v "grep" |grep -v "init.d" |grep -v "service" |grep -v "caddy_install" |awk '{print $2}')
+	PID=$(ps -ef |grep "caddy" |grep -v "grep" |grep -v "init.d" |grep -v "service" |grep -v "caddy" |awk '{print $2}')
 	[[ ! -z ${PID} ]] && kill -9 ${PID}
 	[[ -e "caddy_linux*.tar.gz" ]] && rm -rf "caddy_linux*.tar.gz"
 	
@@ -109,7 +109,7 @@ uninstall_caddy(){
 	read -e -p "(默认: n):" unyn
 	[[ -z ${unyn} ]] && unyn="n"
 	if [[ ${unyn} == [Yy] ]]; then
-		PID=`ps -ef |grep "caddy" |grep -v "grep" |grep -v "init.d" |grep -v "service" |grep -v "caddy_install" |awk '{print $2}'`
+		PID=`ps -ef |grep "caddy" |grep -v "grep" |grep -v "init.d" |grep -v "service" |grep -v "caddy" |awk '{print $2}'`
 		[[ ! -z ${PID} ]] && kill -9 ${PID}
 		if [[ ${release} = "centos" ]]; then
 			chkconfig --del caddy
