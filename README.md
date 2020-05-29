@@ -5,7 +5,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shangh
 
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/caddy.sh && chmod 777 caddy.sh && bash caddy.sh install http.filemanager
 
-wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
+wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/net_speeder.sh && chmod 777 net_speeder.sh && bash net_speeder.sh
 
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 
