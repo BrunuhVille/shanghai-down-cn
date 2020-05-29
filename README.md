@@ -9,9 +9,7 @@ yum install unzip -y && wget --no-check-certificate https://raw.githubuserconten
 
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 
-yum update -y && yum install unzip -y
-
-yum install gcc -y
+yum update -y && yum install unzip -y && yum install gcc -y
 
 chmod 777 /etc/resolv.conf && echo -e "nameserver 223.5.5.5
 nameserver 223.6.6.6" > /etc/resolv.conf
