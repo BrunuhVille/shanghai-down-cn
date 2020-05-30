@@ -34,7 +34,7 @@ source <(curl -sL https://git.io/trojan-install)
 
 source <(curl -sL https://git.io/trojan-install) --remove
 
-wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod +x trojan-web-panel.sh && ./trojan-web-panel.sh
+wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod 777 trojan-web-panel.sh && ./trojan-web-panel.sh
 #### centos7
 CentOS 7.0默认使用的是firewall作为防火墙
 
