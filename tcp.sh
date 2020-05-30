@@ -408,8 +408,8 @@ installzen(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				http://47.103.192.142:3333/zen/kernel-c7.rpm
-				http://47.103.192.142:3333/zen/kernel-headers-c7.rpm
+			wget	http://47.103.192.142:3333/zen/kernel-c7.rpm
+			wget	http://47.103.192.142:3333/zen/kernel-headers-c7.rpm
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
 			
