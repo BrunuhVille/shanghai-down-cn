@@ -16,7 +16,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shangh
 yum install unzip -y && wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
 #### superbench
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
-#### 
+#### 开机配置
 yum update -y
 
 apt update -y && apt-get update -y
