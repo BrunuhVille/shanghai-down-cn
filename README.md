@@ -30,6 +30,8 @@ chmod 777 /etc/hosts && echo "13.229.188.59 github.com" >> /etc/hosts
 source <(curl -sL https://git.io/trojan-install)
 #卸载
 source <(curl -sL https://git.io/trojan-install) --remove
+#伪装站
+wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod +x trojan-web-panel.sh && ./trojan-web-panel.sh
 ~~~
 CentOS 7.0默认使用的是firewall作为防火墙
 
