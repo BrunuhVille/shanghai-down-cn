@@ -26,6 +26,12 @@ chmod 777 /etc/hosts && echo "151.101.108.133 raw.githubusercontent.com" >> /etc
 
 chmod 777 /etc/hosts && echo "13.229.188.59 github.com" >> /etc/hosts
 
+#安装/更新
+source <(curl -sL https://git.io/trojan-install)
+
+#卸载
+source <(curl -sL https://git.io/trojan-install) --remove
+
 CentOS 7.0默认使用的是firewall作为防火墙
 
 查看防火墙状态
