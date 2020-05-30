@@ -14,6 +14,12 @@ wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shangh
  reboot
  
 yum install unzip -y && wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
+#### trojan
+source <(curl -sL https://git.io/trojan-install)
+
+source <(curl -sL https://git.io/trojan-install) --remove
+
+wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod 777 trojan-web-panel.sh && ./trojan-web-panel.sh
 #### superbench
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 ##### 开机配置
@@ -29,13 +35,7 @@ nameserver 223.6.6.6" > /etc/resolv.conf
 chmod 777 /etc/hosts && echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
 
 chmod 777 /etc/hosts && echo "13.229.188.59 github.com" >> /etc/hosts
-#### trojan
-source <(curl -sL https://git.io/trojan-install)
 
-source <(curl -sL https://git.io/trojan-install) --remove
-
-wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod 777 trojan-web-panel.sh && ./trojan-web-panel.sh
-#### centos7
 CentOS 7.0默认使用的是firewall作为防火墙
 
 查看防火墙状态
