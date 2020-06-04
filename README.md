@@ -9,11 +9,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shangh
 #### caddy
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/caddy.sh && chmod 777 caddy.sh && bash caddy.sh install http.filemanager
 #### net_speeder
- yum update -y && yum install gcc -y
- 
- reboot
- 
-yum install unzip -y && wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
+wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
 #### trojan
 source <(curl -sL https://git.io/trojan-install)
 
@@ -28,6 +24,8 @@ yum update -y
 apt update -y && apt-get update -y
 
 yum install unzip -y && yum install gcc -y
+
+apt install unzip -y && apt install gcc -y
 
 chmod 777 /etc/resolv.conf && echo -e "nameserver 223.5.5.5
 nameserver 223.6.6.6" > /etc/resolv.conf
