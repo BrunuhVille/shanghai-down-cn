@@ -21,6 +21,12 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Troja
 #### superbench
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 #### wireguard
+apt update
+
+reboot
+
+apt install linux-headers-$(uname -r) -y
+
 wget https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/debian.sh && chmod 777 debian.sh && bash debian.sh
 ##### 开机配置
 yum update -y
