@@ -18,6 +18,8 @@ source <(curl -sL https://git.io/trojan-install)
 source <(curl -sL https://git.io/trojan-install) --remove
 
 wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod 777 trojan-web-panel.sh && ./trojan-web-panel.sh
+#### testrace
+wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && chmod 777 testrace.sh && bash testrace.sh
 #### superbench
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 #### v2ray-wulabing
