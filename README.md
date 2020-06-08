@@ -23,6 +23,8 @@ wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh &
 #### wireguard
 apt update -y && apt upgrade -y
 
+apt dist-upgrade
+
 reboot
 
 apt install linux-headers-$(uname -r) -y
@@ -32,8 +34,6 @@ wget https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/debia
 yum update -y
 
 apt update -y && apt-get update -y
-
-apt dist-upgrade
 
 yum install unzip -y && yum install gcc -y
 
