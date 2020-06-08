@@ -21,7 +21,7 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Troja
 #### superbench
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 #### wireguard
-apt update -y
+apt update -y && apt upgrade -y
 
 reboot
 
