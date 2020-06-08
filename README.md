@@ -20,7 +20,9 @@ source <(curl -sL https://git.io/trojan-install) --remove
 wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Trojan_panel_web/master/trojan-web-panel.sh" && chmod 777 trojan-web-panel.sh && ./trojan-web-panel.sh
 #### superbench
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
-##### 开机配置
+#### wireguard
+wget https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/debian.sh && chmod 777 debian.sh && bash debian.sh
+####.sh# 开机配置
 yum update -y
 
 apt update -y && apt-get update -y
