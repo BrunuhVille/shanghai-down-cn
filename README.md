@@ -21,7 +21,7 @@ wget -N --no-check-certificate "https://raw.githubusercontent.com/V2RaySSR/Troja
 #### superbench
 wget https://raw.githubusercontent.com/msoayu56/speedtest/master/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 #### v2ray-wulabing
-wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod 777 install.sh && bash install.sh
 #### wireguard
 apt update -y
 
