@@ -33,6 +33,8 @@ yum update -y
 
 apt update -y && apt-get update -y
 
+apt dist-upgrade
+
 yum install unzip -y && yum install gcc -y
 
 apt install unzip -y && apt install gcc -y
