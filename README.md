@@ -10,6 +10,31 @@ apt-get install iptables && apt-get install dnsutils
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
 #### caddy
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/caddy.sh && chmod 777 caddy.sh && bash caddy.sh install http.filemanager
+
+mkdir /usr/local/caddy/www && mkdir /usr/local/caddy/www/speeder
+
+echo ":3333 {
+
+ root /usr/local/caddy/www/speeder
+ 
+ timeouts none
+ 
+ gzip
+ 
+ browse
+ 
+}" > /usr/local/caddy/Caddyfile
+
+/etc/init.d/caddy start
+
+cd /usr/local/caddy/www/speeder
+
+chmod 777 /usr/local/caddy/www/speeder
+
+dd if=/dev/zero of=ru bs=1M count=300
+
+mv ru ra.asz
+
 #### net_speeder
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
 #### trojan
