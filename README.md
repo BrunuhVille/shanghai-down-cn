@@ -85,8 +85,6 @@ systemctl disable firewalld.service
 
 chmod 777 /etc/hosts && echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
 
-chmod 777 /etc/hosts && echo "151.101.208.133 raw.githubusercontent.com" >> /etc/hosts
-
 chmod 777 /etc/hosts && echo "13.229.188.59 github.com" >> /etc/hosts
 
 CentOS 7.0默认使用的是firewall作为防火墙
