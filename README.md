@@ -79,6 +79,10 @@ apt install unzip -y && apt install gcc -y
 chmod 777 /etc/resolv.conf && echo -e "nameserver 223.5.5.5
 nameserver 223.6.6.6" > /etc/resolv.conf
 
+systemctl stop firewalld.service
+
+systemctl disable firewalld.service
+
 chmod 777 /etc/hosts && echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
 
 chmod 777 /etc/hosts && echo "13.229.188.59 github.com" >> /etc/hosts
