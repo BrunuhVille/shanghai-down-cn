@@ -16,18 +16,18 @@ wireguard_install(){
     version=$(cat /etc/os-release | awk -F '[".]' '$1=="VERSION="{print $2}')
     if [ $version == 18 ]
     then
-        sudo apt-get update -y
-        sudo apt-get install -y software-properties-common
-        sudo apt-get install -y openresolv
+         apt-get update -y
+         apt-get install -y software-properties-common
+        apt-get install -y openresolv
     else
-        sudo apt-get update -y
-        sudo apt-get install -y software-properties-common
+         apt-get update -y
+         apt-get install -y software-properties-common
     fi
-    sudo add-apt-repository -y ppa:wireguard/wireguard
-    sudo apt-get update -y
-    sudo apt-get install -y wireguard curl
+     add-apt-repository -y ppa:wireguard/wireguard
+     apt-get update -y
+     apt-get install -y wireguard curl
 
-    sudo echo net.ipv4.ip_forward = 1 >> /etc/sysctl.conf
+     echo net.ipv4.ip_forward = 1 >> /etc/sysctl.conf
     sysctl -p
     echo "1"> /proc/sys/net/ipv4/ip_forward
     
@@ -43,7 +43,7 @@ wireguard_install(){
     port=$(rand 10000 60000)
     eth=$(ls /sys/class/net | awk '/^e/{print}')
 
-sudo cat > /etc/wireguard/wg0.conf <<-EOF
+ cat > /etc/wireguard/wg0.conf <<-EOF
 [Interface]
 PrivateKey = $s1
 Address = 10.0.0.1/24 
@@ -58,7 +58,7 @@ PublicKey = $c2
 AllowedIPs = 10.0.0.2/32
 EOF
 
-sudo cat > /etc/init.d/wgstart <<-EOF
+ cat > /etc/init.d/wgstart <<-EOF
 #! /bin/bash
 ### BEGIN INIT INFO
 # Provides:		wgstart
@@ -69,22 +69,22 @@ sudo cat > /etc/init.d/wgstart <<-EOF
 # Short-Description:	wgstart
 ### END INIT INFO
 
-sudo wg-quick up wg0
+ wg-quick up wg0
 EOF
 
 
 
-    sudo chmod 755 /etc/init.d/wgstart
+     chmod 755 /etc/init.d/wgstart
     cd /etc/init.d
     if [ $version == 14 ]
     then
-        sudo update-rc.d wgstart defaults 90
+        update-rc.d wgstart defaults 90
     else
-        sudo update-rc.d wgstart defaults
+        update-rc.d wgstart defaults
     fi
     
     udp_install
-    sudo wg-quick up wg0
+     wg-quick up wg0
 }
 
 udp_install(){
@@ -155,23 +155,23 @@ EOF
 
 
 #设置脚本权限
-    sudo chmod 755 /etc/init.d/autoudp
+     chmod 755 /etc/init.d/autoudp
     cd /etc/init.d
     if [ $version == 14 ]
     then
-        sudo update-rc.d autoudp defaults 90
+        update-rc.d autoudp defaults 90
     else
-        sudo update-rc.d autoudp defaults
+        update-rc.d autoudp defaults
     fi
 }
 
 wireguard_remove(){
 
-    sudo wg-quick down wg0
-    sudo apt-get remove -y wireguard
-    sudo rm -rf /etc/wireguard
-    sudo rm -f /etc/init.d/wgstart
-    sudo rm -f /etc/init.d/autoudp
+    wg-quick down wg0
+    apt-get remove -y wireguard
+    rm -rf /etc/wireguard
+     rm -f /etc/init.d/wgstart
+    rm -f /etc/init.d/autoudp
     echo -e "\033[37;41m卸载完成，建议重启服务器\033[0m"
 
 }
