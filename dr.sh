@@ -13,14 +13,14 @@ randpwd(){
 }
 
 add_backports(){
-	apt install -y apt-transport-https sudo
+	apt install -y apt-transport-https 
 	 echo deb https://deb.debian.org/debian/ buster-backports main contrib non-free >> /etc/apt/sources.list
 	 echo deb-src https://deb.debian.org/debian/ buster-backports main contrib non-free >> /etc/apt/sources.list
 	apt update
 }
 
 wireguard_install(){
-	apt install -y sudo wireguard curl resolvconf
+	apt install -y wireguard curl resolvconf
 	 echo net.ipv4.ip_forward = 1 >> /etc/sysctl.conf
 	sysctl -p
 	echo "1"> /proc/sys/net/ipv4/ip_forward
@@ -35,7 +35,7 @@ wireguard_install(){
 	port=$(rand 10000 60000)
 	eth=$(ls /sys/class/net | awk '/^e/{print}')
 
-sudo cat > /etc/wireguard/wg0.conf <<-EOF
+ cat > /etc/wireguard/wg0.conf <<-EOF
 [Interface]
 PrivateKey = $s1
 Address = 172.16.0.1/24 
@@ -123,9 +123,9 @@ EOF
 
 
 #设置脚本权限
-	sudo chmod 755 /etc/init.d/autoudp
+	 chmod 755 /etc/init.d/autoudp
 	cd /etc/init.d
-	sudo update-rc.d autoudp defaults
+	 update-rc.d autoudp defaults
 }
 
 wireguard_remove(){
