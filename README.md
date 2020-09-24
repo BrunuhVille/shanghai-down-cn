@@ -68,7 +68,7 @@ reboot
 
 apt install linux-headers-$(uname -r) -y
 
-wget https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/debian.sh && chmod 777 dr.sh && bash dr.sh
+wget https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/dr.sh && chmod 777 dr.sh && bash dr.sh
 ##### 开机配置
 yum update -y
 
