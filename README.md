@@ -56,6 +56,8 @@ wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.c
 #### wireguard
 ubuntu
 
+sudo -i
+
 wget https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/wu.sh && chmod 777 wu.sh
 
 apt update -y
