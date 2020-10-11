@@ -137,7 +137,7 @@ Download_brook(){
     [[ ! -e ${file} ]] && mkdir ${file}
     cd ${file}
     if [[ ${bit} == "x86_64" ]]; then
-       wget http://47.103.192.142:3333/newbrook/brook
+       wget http://47.103.192.142:3333/eightbrk/brook
     else
         wget --no-check-certificate -N "https://github.com/txthinking/brook/releases/download/${brook_new_ver}/brook_linux_386"
         mv brook_linux_386 brook
