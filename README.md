@@ -136,3 +136,10 @@ vi /etc/ssh/sshd_config
 passwd root
 
 service sshd restart
+## lkl
+systemctl disable rinetd-bbr.service
+
+killall -9 rinetd-bbr
+
+rm -rf /usr/bin/rinetd-bbr /etc/rinetd-bbr.conf /etc/systemd/system/rinetd-bbr.service
+
