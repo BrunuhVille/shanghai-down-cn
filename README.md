@@ -118,3 +118,8 @@ systemctl enable firewalld.service
 重启防火墙
 
 systemctl restart firewalld.service
+## ubuntu
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -F
