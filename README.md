@@ -118,8 +118,11 @@ systemctl enable firewalld.service
 重启防火墙
 
 systemctl restart firewalld.service
-## ubuntu
+## ubuntu oracle
 iptables -P INPUT ACCEPT
+
 iptables -P FORWARD ACCEPT
+
 iptables -P OUTPUT ACCEPT
+
 iptables -F
