@@ -126,3 +126,13 @@ iptables -P FORWARD ACCEPT
 iptables -P OUTPUT ACCEPT
 
 iptables -F
+## root
+sudo -i
+
+chmod 777 /etc/ssh/sshd_config 
+
+vi /etc/ssh/sshd_config 
+
+passwd root
+
+service sshd restart
