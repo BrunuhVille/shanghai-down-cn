@@ -9,7 +9,7 @@ apt-get install iptables && apt-get install dnsutils
 
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
 
-wget http://47.103.192.142:3333/brook/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
+wget http://81.71.141.240:3333/brook/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
 
 v20200801
 #### caddy
