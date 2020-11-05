@@ -41,8 +41,8 @@ installbbr(){
 		
 		elif [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget http://47.103.192.142:3333/bbr/kernel-c7.rpm
-				wget http://47.103.192.142:3333/bbr/kernel-headers-c7.rpm
+				wget http://81.71.141.240:3333/bbr/kernel-c7.rpm
+				wget http://81.71.141.240:3333/bbr/kernel-headers-c7.rpm
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
 			
@@ -267,8 +267,8 @@ installxanmod(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget http://47.103.192.142:3333/xan/kernel-c7.rpm
-				wget http://47.103.192.142:3333/xan/kernel-headers-c7.rpm
+				wget http://81.71.141.240:3333/xan/kernel-c7.rpm
+				wget http://81.71.141.240:3333/xan/kernel-headers-c7.rpm
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
 			
