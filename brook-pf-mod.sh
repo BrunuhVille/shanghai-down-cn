@@ -137,7 +137,7 @@ Download_brook(){
     [[ ! -e ${file} ]] && mkdir ${file}
     cd ${file}
     if [[ ${bit} == "x86_64" ]]; then
-       wget http://47.103.192.142:3333/eightbrk/brook
+       wget http://81.71.141.240:3333/eightbrk/brook
     else
         wget --no-check-certificate -N "https://github.com/txthinking/brook/releases/download/${brook_new_ver}/brook_linux_386"
         mv brook_linux_386 brook
@@ -147,14 +147,14 @@ Download_brook(){
 }
 Service_brook(){
     if [[ ${release} = "centos" ]]; then
-        if ! wget --no-check-certificate http://47.103.192.142:3333/brook/brook-pf_centos -O /etc/init.d/brook-pf; then
+        if ! wget --no-check-certificate http://81.71.141.240:3333/brook/brook-pf_centos -O /etc/init.d/brook-pf; then
             echo -e "${Error} Brook服务 管理脚本下载失败 !" && exit 1
         fi
         chmod +x /etc/init.d/brook-pf
         chkconfig --add brook-pf
         chkconfig brook-pf on
     else
-        if ! wget --no-check-certificate http://47.103.192.142:3333/brook/brook-pf_debian -O /etc/init.d/brook-pf; then
+        if ! wget --no-check-certificate http://81.71.141.240:3333/brook/brook-pf_debian -O /etc/init.d/brook-pf; then
             echo -e "${Error} Brook服务 管理脚本下载失败 !" && exit 1
         fi
         chmod +x /etc/init.d/brook-pf
