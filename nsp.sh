@@ -69,7 +69,7 @@ dependent_install(){
 # 下载主程序
 program_download(){
 	rm -rf net-speeder* Net_Speeder*
-	wget http://47.103.192.142:3333/netspeeder/Net_Speeder.zip
+	wget http://81.71.141.240:3333/netspeeder/Net_Speeder.zip
 }
 
 
