@@ -142,4 +142,10 @@ systemctl disable rinetd-bbr.service
 killall -9 rinetd-bbr
 
 rm -rf /usr/bin/rinetd-bbr /etc/rinetd-bbr.conf /etc/systemd/system/rinetd-bbr.service
+## 回程路由
+wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && chmod 777 testrace.sh
+
+wget https://raw.githubusercontent.com/flyzy2005/shell/master/autoBestTrace.sh && chmod 777 autoBestTrace.sh
+
+
 
