@@ -89,8 +89,6 @@ systemctl stop firewalld.service
 
 systemctl disable firewalld.service
 
-chmod 777 /etc/hosts && echo "151.101.0.133 raw.githubusercontent.com" >> /etc/hosts
-
 chmod 777 /etc/hosts && echo "151.101.108.133 raw.githubusercontent.com" >> /etc/hosts
 
 chmod 777 /etc/hosts && echo "151.101.128.133 raw.githubusercontent.com" >> /etc/hosts
@@ -152,6 +150,4 @@ rm -rf /usr/bin/rinetd-bbr /etc/rinetd-bbr.conf /etc/systemd/system/rinetd-bbr.s
 wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && chmod 777 testrace.sh
 
 wget https://raw.githubusercontent.com/flyzy2005/shell/master/autoBestTrace.sh && chmod 777 autoBestTrace.sh
-
-
 
