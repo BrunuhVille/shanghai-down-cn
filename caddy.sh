@@ -51,7 +51,7 @@ Download_caddy(){
 	fi
 	
 	if [[ ${bit} == "x86_64" ]]; then
-		wget http://81.71.141.240:3333/caddy/caddy_linux.tar.gz
+		wget http://218.25.208.218:13333/caddy/caddy_linux.tar.gz
 	elif [[ ${bit} == "i386" || ${bit} == "i686" ]]; then
 		wget --no-check-certificate -O "caddy_linux.tar.gz" "https://caddyserver.com/download/linux/386${extension_all}"
 	elif [[ ${bit} == "armv7l" ]]; then
@@ -71,14 +71,14 @@ Download_caddy(){
 }
 Service_caddy(){
 	if [[ ${release} = "centos" ]]; then
-		if ! wget http://81.71.141.240:3333/caddy/caddy_centos -O /etc/init.d/caddy; then
+		if ! wget http://218.25.208.218:13333/caddy/caddy_centos -O /etc/init.d/caddy; then
 			echo -e "${Error_font_prefix}[错误]${Font_suffix} Caddy服务 管理脚本下载失败 !" && exit 1
 		fi
 		chmod +x /etc/init.d/caddy
 		chkconfig --add caddy
 		chkconfig caddy on
 	else
-		if ! wget http://81.71.141.240:3333/caddy/caddy_debian -O /etc/init.d/caddy; then
+		if ! wget http://218.25.208.218:13333/caddy/caddy_debian -O /etc/init.d/caddy; then
 			echo -e "${Error_font_prefix}[错误]${Font_suffix} Caddy服务 管理脚本下载失败 !" && exit 1
 		fi
 		chmod +x /etc/init.d/caddy
