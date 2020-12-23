@@ -89,7 +89,7 @@ systemctl stop firewalld.service
 
 systemctl disable firewalld.service
 
-chmod 777 /etc/hosts && echo "151.101.128.133 raw.githubusercontent.com" >> /etc/hosts
+chmod 777 /etc/hosts && echo "199.232.4.133 raw.githubusercontent.com" >> /etc/hosts
 
 chmod 777 /etc/hosts && echo "185.199.108.153 github.000060000.xyz" >> /etc/hosts
 
