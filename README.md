@@ -3,9 +3,10 @@ wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 77
 
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/tcp.sh && chmod 777 tcp.sh && ./tcp.sh
 #### trojan
-# 安装/更新
+#安装/更新
 source <(curl -sL https://git.io/trojan-install)
-# 卸载
+
+#卸载
 source <(curl -sL https://git.io/trojan-install) --remove
 #### gost
 wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod 777 gost.sh && ./gost.sh
