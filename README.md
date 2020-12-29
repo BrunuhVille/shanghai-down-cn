@@ -2,6 +2,12 @@
 wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
 
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/tcp.sh && chmod 777 tcp.sh && ./tcp.sh
+#### trojan
+#安装/更新
+source <(curl -sL https://git.io/trojan-install)
+
+#卸载
+source <(curl -sL https://git.io/trojan-install) --remove
 #### gost
 wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod 777 gost.sh && ./gost.sh
 #### ddns/brook
@@ -43,11 +49,6 @@ mv ru ra.asz
 
 #### net_speeder
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
-#### trojan
-#安装/更新
-source <(curl -sL https://git.io/trojan-install)
-#卸载
-source <(curl -sL https://git.io/trojan-install) --remove
 #### testrace
 wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && chmod 777 testrace.sh && bash testrace.sh
 #### superbench
