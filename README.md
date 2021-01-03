@@ -85,6 +85,7 @@ yum install unzip -y && yum install gcc -y
 apt install unzip -y && apt install gcc -y
 
 chmod 777 /etc/resolv.conf && echo -e "nameserver 223.5.5.5" > /etc/resolv.conf
+
 chmod 777 /etc/resolv.conf && echo "nameserver 223.6.6.6" >> /etc/resolv.conf
 
 systemctl stop firewalld.service
