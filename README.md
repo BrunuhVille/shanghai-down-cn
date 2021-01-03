@@ -17,7 +17,7 @@ yum install -y iptables && yum install bind-utils -y
 
 apt-get install iptables && apt-get install dnsutils
 
-wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
+wget --no-check-certificate https://raw.githubusercontent.com/monret/brook/master/brook-pf-mod.sh
 
 wget http://81.71.141.240:3333/brook/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
 
