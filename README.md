@@ -12,14 +12,12 @@ source <(curl -sL https://git.io/trojan-install)
 source <(curl -sL https://git.io/trojan-install) --remove
 #### gost
 wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod 777 gost.sh && ./gost.sh
-#### ddns/brook
+#### ddns/brook，注意，brook开启域名监控前，先crontab -e 选择编辑器2，vim
 yum install -y iptables && yum install bind-utils -y
 
 apt-get install iptables && apt-get install dnsutils
 
 wget --no-check-certificate https://raw.githubusercontent.com/monret/brook/master/brook-pf-mod.sh
-
-注意，brook开启域名监控前，先crontab -e 选择编辑器2，vim
 
 wget http://81.71.141.240:3333/brook/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
 
