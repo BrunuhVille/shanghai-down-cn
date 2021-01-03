@@ -11,7 +11,7 @@ source <(curl -sL https://git.io/trojan-install)
 
 source <(curl -sL https://git.io/trojan-install) --remove
 #### gost
-wget https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod 777 gost.sh && ./gost.sh
+wget --no-check-certificate https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod 777 gost.sh && ./gost.sh
 #### ddns/brook，注意，brook开启域名监控前，先crontab -e 选择编辑器2，vim
 yum install -y iptables && yum install bind-utils -y
 
