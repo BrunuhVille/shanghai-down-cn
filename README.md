@@ -1,4 +1,4 @@
-apt update -y && apt-get update -y && apt install curl -y
+apt update -y && apt install curl -y
 #### bbr
 wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
 
