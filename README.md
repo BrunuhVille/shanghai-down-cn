@@ -19,6 +19,8 @@ apt-get install iptables && apt-get install dnsutils
 
 wget --no-check-certificate https://raw.githubusercontent.com/monret/brook/master/brook-pf-mod.sh
 
+注意，brook开启域名监控前，先crontab -e 选择编辑器2，vim
+
 wget http://81.71.141.240:3333/brook/brook-pf-mod.sh && chmod 777 brook-pf-mod.sh && bash brook-pf-mod.sh
 
 v20200801
