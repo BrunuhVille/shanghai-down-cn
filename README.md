@@ -1,12 +1,10 @@
 apt update -y && apt install curl -y
-
-crontab -e 
+### crontab -e 
 #### bbr
 wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
 
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/tcp.sh && chmod 777 tcp.sh && ./tcp.sh
 #### trojan
-##### crontab -e 
 #安装/更新
 
 source <(curl -sL https://git.io/trojan-install)
