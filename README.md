@@ -1,6 +1,8 @@
 apt update -y && apt install curl -y
-### crontab -e 
+
 select-editor
+
+crontab -e 
 #### bbr
 wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
 
