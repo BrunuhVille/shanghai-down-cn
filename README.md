@@ -7,6 +7,8 @@ crontab -e
 wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
 
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/tcp.sh && chmod 777 tcp.sh && ./tcp.sh
+#### 256
+echo "tmpfs /run tmpfs nosuid,noexec,size=20M,nr_inodes=4096 0 0" >> /etc/fstab
 #### realm安装
 wget -N --no-check-certificate https://git.io/realm.sh && chmod 777 realm.sh && ./realm.sh
 #### trojan
