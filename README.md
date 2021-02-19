@@ -1,5 +1,7 @@
 apt update -y && apt install curl -y
 
+curl -sL yabs.sh | bash
+
 select-editor
 
 crontab -e 
