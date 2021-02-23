@@ -5,8 +5,7 @@ curl -sL yabs.sh | bash
 select-editor
 
 crontab -e 
-
-* */1 * * * systemctl restart realm
+#### * */1 * * * systemctl restart realm
 #### bbr
 wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
 
