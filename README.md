@@ -154,7 +154,7 @@ sudo -i
 
 chmod 777 /etc/ssh/sshd_config 
 
-vi /etc/ssh/sshd_config 
+vim /etc/ssh/sshd_config 
 
 passwd root
 
