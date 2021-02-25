@@ -5,6 +5,18 @@ curl -sL yabs.sh | bash
 select-editor
 
 crontab -e 
+#### 关闭ipv6
+vim /etc/sysctl.conf
+
+添加下面的行：
+
+net.ipv6.conf.all.disable_ipv6 = 1
+
+net.ipv6.conf.default.disable_ipv6 = 1
+
+保存并退出文件。
+
+sysctl -p
 #### * */1 * * * systemctl restart realm
 #### bbr
 wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
