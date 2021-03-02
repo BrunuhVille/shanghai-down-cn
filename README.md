@@ -1,4 +1,4 @@
-apt update -y && apt install curl -y && apt install wget -y
+apt update -y && apt install curl -y && apt install wget -y && apt install bc -y && apt install unzip -y && apt install vim -y
 
 curl -sL yabs.sh | bash
 
