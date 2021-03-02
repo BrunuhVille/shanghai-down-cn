@@ -1,4 +1,4 @@
-apt update -y && apt install curl -y
+apt update -y && apt install curl -y && apt install wget -y
 
 curl -sL yabs.sh | bash
 
