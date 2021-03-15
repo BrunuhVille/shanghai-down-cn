@@ -1,3 +1,5 @@
+wget 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod 777 InstallNET.sh && bash InstallNET.sh -d 10 -v 64 -a
+
 chmod 777 /etc/resolv.conf && echo -e "nameserver 8.8.8.8" > /etc/resolv.conf
 
 apt update -y && apt install curl -y && apt install wget -y && apt install bc -y && apt install unzip -y && apt install vim -y
