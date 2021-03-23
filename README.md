@@ -1,4 +1,4 @@
-apt-get install grub-efi
+apt-get install grub-efi -y
 
 wget 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod 777 InstallNET.sh && bash InstallNET.sh -d 10 -v 64 -a
 
