@@ -138,7 +138,7 @@ chmod 777 /etc/hosts && echo "185.199.108.153 github.000060000.xyz" >> /etc/host
 
 chmod 777 /etc/hosts && echo "185.199.108.133 raw.githubusercontent.com" >> /etc/hosts
 
-chmod 777 /etc/hosts && echo "52.1.26.21 git.io" >> /etc/hosts
+chmod 777 /etc/hosts && echo "54.235.108.207 git.io" >> /etc/hosts
 
 chmod 777 /etc/hosts && echo "13.229.188.59 github.com" >> /etc/hosts
 
