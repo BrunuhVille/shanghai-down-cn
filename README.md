@@ -69,7 +69,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shangh
 
 mkdir /usr/local/caddy/www && mkdir /usr/local/caddy/www/speeder
 
-echo ":3333 {
+echo ":13333 {
 
  root /usr/local/caddy/www/speeder
  
