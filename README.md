@@ -1,3 +1,5 @@
+https://github.com/filebrowser/filebrowser/releases/download/v2.15.0/linux-amd64-filebrowser.tar.gz
+
 https://233blog.com/post/26
 
 apt-get install grub-efi -y
