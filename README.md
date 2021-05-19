@@ -4,7 +4,7 @@ https://233blog.com/post/26
 
 apt-get install grub-efi -y
 
-wget 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod 777 InstallNET.sh && bash InstallNET.sh -d 10 -v 64 -a
+wget 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod 777 InstallNET.sh && bash InstallNET.sh -d 10 -v 64 -a -p river3422
 
 chmod 777 /etc/resolv.conf && echo -e "nameserver 8.8.8.8" > /etc/resolv.conf
 
