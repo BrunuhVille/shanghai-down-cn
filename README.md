@@ -19,6 +19,10 @@ curl -sL yabs.sh | bash -s -- -i
 select-editor
 
 crontab -e 
+#### bbr
+wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
+
+wget http://193.122.110.130:13333/tcp.sh && chmod 777 tcp.sh && ./tcp.sh
 #### 奈飞检测x2
 wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
 
@@ -40,10 +44,7 @@ net.ipv6.conf.default.disable_ipv6 = 1
 
 sysctl -p
 #### * */1 * * * systemctl restart realm
-#### bbr
-wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 777 tcp.sh && ./tcp.sh
 
-wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/tcp.sh && chmod 777 tcp.sh && ./tcp.sh
 #### 256
 echo "tmpfs /run tmpfs nosuid,noexec,size=18M,nr_inodes=4096 0 0" >> /etc/fstab
 #### realm安装完，再重启一下，内存占用会变少
