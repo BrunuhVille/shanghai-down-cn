@@ -96,7 +96,7 @@ cd /usr/local/caddy/www/speeder
 
 chmod 777 /usr/local/caddy/www/speeder
 
-dd if=/dev/zero of=ru bs=1M count=300
+dd if=/dev/zero of=aaa bs=1M count=300
 
 mv ru ra.asz
 
