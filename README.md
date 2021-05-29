@@ -55,6 +55,7 @@ echo "tmpfs /run tmpfs nosuid,noexec,size=18M,nr_inodes=4096 0 0" >> /etc/fstab
 wget -N --no-check-certificate https://git.io/realm.sh && chmod 777 realm.sh && ./realm.sh
 #### trojan
 #安装/更新
+trojan update v0.10.0
 
 source <(curl -sL https://git.io/trojan-install)
 
