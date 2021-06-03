@@ -6,7 +6,7 @@ https://233blog.com/post/26
 
 apt-get install grub-efi -y
 
-wget https://raw.githubusercontent.com/bohanyang/debi/master/debi.sh && chmod 777 debi.sh && bash debi.sh --user root --password river3422
+#### wget https://raw.githubusercontent.com/bohanyang/debi/master/debi.sh && chmod 777 debi.sh && bash debi.sh --user root --password river3422
 
 wget 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && chmod 777 InstallNET.sh && bash InstallNET.sh -d 10 -v 64 -a -p river3422
 
