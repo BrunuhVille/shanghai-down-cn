@@ -54,7 +54,7 @@ echo "tmpfs /run tmpfs nosuid,noexec,size=18M,nr_inodes=4096 0 0" >> /etc/fstab
 #### realm安装完，再重启一下，内存占用会变少
 wget -N --no-check-certificate https://git.io/realm.sh && chmod 777 realm.sh && ./realm.sh
 #### trojan
-安装/更新
+#安装/更新
 
 source <(curl -sL https://git.io/trojan-install)
 
