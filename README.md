@@ -82,7 +82,7 @@ wget http://81.71.141.240:3333/brook/brook-pf-mod.sh && chmod 777 brook-pf-mod.s
 
 v20200801
 #### caddy
-wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/caddy.sh && chmod 777 caddy.sh && bash caddy.sh install http.filemanager
+wget -N --no-check-certificate https://raw.githubusercontent.com/sancdvs/caddy_install/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 
 mkdir /usr/local/caddy/www && mkdir /usr/local/caddy/www/speeder
 
