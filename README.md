@@ -1,3 +1,6 @@
+#### 一键blog
+wget https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/vps.sh && chmod 777 vps.sh && bash vps.sh
+
 wget http://193.122.110.130:13333/superbench.sh && chmod 777 superbench.sh && bash superbench.sh
 
 https://github.com/filebrowser/filebrowser/releases/download/v2.15.0/linux-amd64-filebrowser.tar.gz
