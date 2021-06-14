@@ -30,7 +30,7 @@ wget -N --no-check-certificate "https://github.000060000.xyz/tcp.sh" && chmod 77
 
 wget http://193.122.110.130:13333/tcp.sh && chmod 777 tcp.sh && ./tcp.sh
 #### 奈飞检测x2
-wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
+wget --no-check-certificate -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf -method full
 
 bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
 
