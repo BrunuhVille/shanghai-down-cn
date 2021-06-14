@@ -69,7 +69,6 @@ INFO="36m"     # Info message
 LINK="92m"     # Share Link Message
 
 #Predefined install,do not change!!!
-install_bbr=1
 install_nodejs=1
 install_trojan=1
 trojanport="443"
@@ -357,10 +356,7 @@ install_moudles(){
   source mariadb.sh
   install_mariadb
   fi
-  ## Install bbr
-  curl -LO https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/install/bbr.sh
-  source bbr.sh
-  install_bbr
+  
   ## Install Nodejs
   curl -LO https://raw.githubusercontent.com/johnrosen1/vpstoolbox/master/install/nodejs.sh
   source nodejs.sh
