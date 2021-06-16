@@ -89,11 +89,11 @@ v20200801
 #### caddy
 wget -N --no-check-certificate https://raw.githubusercontent.com/sancdvs/caddy_install/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 
-mkdir caddyfile
+mkdir cadfile
 
 echo ":13333 {
 
- root /root/caddyfile
+ root /root/cadfile
  
  timeouts none
  
@@ -105,9 +105,9 @@ echo ":13333 {
 
 /etc/init.d/caddy start
 
-chmod 777 caddyfile
+chmod 777 cadfile
 
-cd caddyfile
+cd cadfile
 
 dd if=/dev/zero of=aaa bs=1M count=300
 
