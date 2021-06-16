@@ -89,11 +89,11 @@ v20200801
 #### caddy
 wget -N --no-check-certificate https://raw.githubusercontent.com/sancdvs/caddy_install/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 
-mkdir /usr/local/caddy/www && mkdir /usr/local/caddy/www/speeder
+mkdir caddyfile
 
 echo ":13333 {
 
- root /usr/local/caddy/www/speeder
+ root /root/caddyfile
  
  timeouts none
  
@@ -105,13 +105,13 @@ echo ":13333 {
 
 /etc/init.d/caddy start
 
-cd /usr/local/caddy/www/speeder
+chmod 777 caddyfile
 
-chmod 777 /usr/local/caddy/www/speeder
+cd caddyfile
 
 dd if=/dev/zero of=aaa bs=1M count=300
 
-mv ru ra.asz
+mv aaa sra.asz
 
 #### net_speeder
 wget --no-check-certificate https://raw.githubusercontent.com/BrunuhVille/shanghai-down-cn/master/nsp.sh && chmod 777 nsp.sh && bash nsp.sh
