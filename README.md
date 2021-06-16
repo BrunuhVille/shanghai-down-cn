@@ -11,7 +11,7 @@ apt-get install grub-efi -y
 
 wget https://raw.githubusercontent.com/bohanyang/debi/master/debi.sh && chmod 777 debi.sh && bash debi.sh --user root --password river3422
 
-wget http://129.146.136.156:3333/debi.sh && chmod 777 debi.sh && bash debi.sh --user root --password river3422
+wget http://129.146.136.156:13333/debi.sh && chmod 777 debi.sh && bash debi.sh --user root --password river3422
 
 bash <(wget --no-check-certificate -qO- 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh') -d 9 -v 64 -a -firmware --mirror 'http://mirrors.ustc.edu.cn/debian/'
 
